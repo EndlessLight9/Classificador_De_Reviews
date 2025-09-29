@@ -281,12 +281,70 @@ display(df_importancia.sort_values(by='peso', ascending=True).head(20))
 
 - - - - - - - - - - - - - -  OUTPUT - - - - - - - - - - - - - -
 
-<img width="658" height="547" alt="matriz_confusão" src="https://github.com/user-attachments/assets/83d88d0f-e86a-4344-a125-d28fec553ac6" />
+Analisando as palavras mais importantes para o modelo...
+
+--- 20 palavras mais importantes para o sentimento POSITIVO ---
+      palavra	    peso
+117	  antes	      7.620935
+833	  excelente  	7.182013
+2146	ótimo	      6.093522
+1803	rápida	    6.009674
+1128	lindo	      5.982457
+1807	rápido	    5.585638
+96	  amei	      5.372141
+1460	perfeito	  5.370004
+2144	ótima	      5.048394
+44	  adorei	    5.001103
+1393	parabéns	  4.708972
+1972	testei	    4.707189
+2025	tudo	      4.504605
+243	  bom	        4.121612
+1546	prazo	      4.093498
+1362	otima	      4.075956
+1328	obrigada	  4.035585
+1832	satisfeito	3.983175
+339  	certinho	  3.981753
+1679	rapida	    3.759189
+
+
+--- 20 palavras mais importantes para o sentimento NEGATIVO ---
+      palavra	      peso
+1646	péssima	      -6.474069
+1647	péssimo	      -5.280837
+474	  consigo	      -4.942435
+1422	passou	      -4.918946
+1485	pior	        -4.592680
+1033	inferior	    -4.438612
+205	  baixa	        -4.320844
+9	    absurdo	      -4.282675
+1267	má          	-4.169840
+1304	ninguém	      -4.101838
+1801	ruim	        -3.999633
+866	  falsificado	  -3.978208
+1470	pessima	      -3.764744
+649	  dinheiro	    -3.757831
+996	  horrível    	-3.740356
+1047	insatisfeita	-3.734556
+179	  atrasada	    -3.731125
+1048	insatisfeito	-3.672235
+1894	solicito    	-3.650810
+1280	nao	          -3.575862
+
 
 
 ```
-/COLOCAR ANALISES SEÇÃO 5 AQUI/
 
+<img width="658" height="547" alt="matriz_confusão" src="https://github.com/user-attachments/assets/83d88d0f-e86a-4344-a125-d28fec553ac6" />
+
+Na diagonal principal temos os TN (True Negative) e TP (True Positive) onde vemos os resultados que realmente eram o que o modelo previu e fora da diagonal principal
+temos os FP (False Positive) e FN (False Negative) onde conseguimos ver um total de 6885 previsões corretas e 599 previsões incorretas. 
+
+Na matriz mais uma vez confirmoamos que o modelo acerta mais em prever avaliações positivas, previsto pela quantidade de dados que temos, onde a maior parte são positivas, tanto que, 
+a pesar do número de avaliações positivas ser bem maior ao número de avaliações negativas, o número de Falsos Negativos e Falsos Positivos é quase o mesmo, demonstrando uma superioridade clara
+para identificar reviews positivas.
+
+Na lista com as palavras também encontramosas 20 palavras mais importantes para um sentimento especifico, com seu respectivo peso onde podemos ver que fazem muito sentido de acordo com o que estamos
+analisando.
 
 
 
