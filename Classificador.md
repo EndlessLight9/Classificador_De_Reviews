@@ -281,8 +281,12 @@ display(df_importancia.sort_values(by='peso', ascending=True).head(20))
 
 - - - - - - - - - - - - - -  OUTPUT - - - - - - - - - - - - - -
 
+![Grafico](matriz_confusão.png)
+
 ```
 /COLOCAR ANALISES SEÇÃO 5 AQUI/
+
+
 
 
 Como seguinte passo agora resta identificar os motivos que tornam uma review positiva ou negativa, para isto, optei por uma análise de n-gramas
