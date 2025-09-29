@@ -281,7 +281,8 @@ display(df_importancia.sort_values(by='peso', ascending=True).head(20))
 
 - - - - - - - - - - - - - -  OUTPUT - - - - - - - - - - - - - -
 
-![Grafico](matriz_confusão.png)
+<img width="658" height="547" alt="matriz_confusão" src="https://github.com/user-attachments/assets/83d88d0f-e86a-4344-a125-d28fec553ac6" />
+
 
 ```
 /COLOCAR ANALISES SEÇÃO 5 AQUI/
